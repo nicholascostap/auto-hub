@@ -1,0 +1,11 @@
+.form-cadastro{
+    width: 500px auto;
+    height: 500px auto;
+    margin: 50px auto;
+    max-width: 1200px;
+    padding: 0 1em;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
