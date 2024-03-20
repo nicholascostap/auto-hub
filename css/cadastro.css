@@ -1,6 +1,6 @@
 body {
     background-color: #1b1a1a;
-    font-family: 'Lora', serif;
+    font-family: 'Raleway Thin';
     font-size: 16px;
     color: #f1c62d;
     line-height: 1.6;
@@ -143,4 +143,33 @@ title{
 a:link {
     color: #1b1a1a;
     text-decoration: none;
+}
+
+@font-face {
+    font-family: 'Raleway Thin';
+    src: url(../fonts/Raleway-VariableFont_wght.ttf) format('truetype');
+}
+
+.user-icon{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background-color: #f1c62d;
+    border: 1px solid #f1c62d;
+    align-items: center;
+    align-content: center;
+    border-radius: 100%;
+    display: block;
+    margin: 0 auto;
+    padding: 0.20em;
+}
+
+.text-title{
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    text-align: center;
 }
