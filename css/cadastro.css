@@ -17,16 +17,17 @@ header {
 
 .top-right-panel{
     position: absolute;
-    width: 100px;
-    height: 50px;
     top: 0;
     right: 0;
     float : right;
-    padding: 1em;
+    padding: 0.50em 0.50em;
+    background-color: #f1c62d;
+    border: 1px solid #f1c62d;
+    border-radius: 5px;
 }
 
 img{
-    max-width: 180px;
+    max-width: 125px;
     height: auto;
     display: block;
 }
@@ -64,6 +65,7 @@ title{
     margin: 0 1em;
     border: 1px solid #f1c62d;
     border-radius: 5px;
+    caret-color: #f1c62d;
 }
 
 .email-field{
@@ -71,6 +73,7 @@ title{
     border: 1px solid #f1c62d;
     border-radius: 5px;
     width: 20em;
+    caret-color: #f1c62d;
 }
 
 .name-field{
@@ -78,6 +81,7 @@ title{
     border: 1px solid #f1c62d;
     border-radius: 5px;
     width: 20em;
+    caret-color: #f1c62d;
 }
 
 .password-field {
@@ -92,6 +96,7 @@ title{
     margin: 0 1em;
     border: 1px solid #f1c62d;
     border-radius: 5px;
+    caret-color: #f1c62d;
 }
 
 .frame {
@@ -115,10 +120,27 @@ title{
     cursor: pointer;
 }
 
+.button:hover {
+    background-color: #333;
+    color: #f1c62d;
+}
+
 .topnav{
     background-color: #333;
     overflow: hidden;
     text-align: center;
-    color : #f1c62d;
-    padding : 1em;
+    color: #f1c62d;
+    padding: 1em;
+}
+
+.nav-field{
+    background-color: #f1c62d;
+    padding: 1em 2em;
+    border: 1px solid #f1c62d;
+    border-radius: 5px;
+}
+
+a:link {
+    color: #1b1a1a;
+    text-decoration: none;
 }
