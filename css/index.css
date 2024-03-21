@@ -1,5 +1,5 @@
 body {
-    background-color: #1b1a1a;
+    background-color: #000000;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     line-height: 1.6;
@@ -8,10 +8,11 @@ body {
 }
 
 header {
-    color: #f1c62d;
-    background-color: #1b1a1a;
-    padding: 1em 0;
-    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    background-color: #000000;
+    align-items: center;
+
 }
 
 title{
@@ -30,29 +31,22 @@ title{
     border: 1px solid #f1c62d;
 }
 
-img{
-    max-width: 180px;
-    height: auto;
-    display: block;
+.logo-left-panel img{
+    height: 100px;
 }
 
-.logo-left-panel{
-    position: absolute;
-    width: 100px;
-    height: 50px;
-    top: 0;
-    left: 0;
-    padding: 1em;
+.top-right-panel{
+    background-color: #000000;
+}
+.top-right-panel a {
+    padding-right: 15px;
 }
 
-.top-right.panel{
-    position: absolute;
-    width: 100px;
-    height: 50px;
-    top: 0;
-    right: 0;
-    float : right;
-    padding: 1em;
+.top-center-panel{
+    background-color: #000000;
+}
+.top-center-panel a {
+    padding-right: 15px;
 }
 
 .topnav{

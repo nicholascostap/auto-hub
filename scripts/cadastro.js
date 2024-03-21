@@ -5,7 +5,7 @@ async function cadastroUsuario(){
     let email = document.getElementById('email').value;
     let password = document.getElementById('password').value;
     let cpf_cnpj = document.getElementById('cpf_cnpj').value;
-    let birthday = document.getElementById('birthday').value;       
+    let birthday = document.getElementById('birthday').value;
     let resposta = await fetch(url, {
         method: "POST",
         body: JSON.stringify({
@@ -26,18 +26,3 @@ async function cadastroUsuario(){
 
     alert(JSON.stringify(data));
 }
-
-function formatCpf(i){
-   
-    var v = i.value;
-    
-    if(isNaN(v[v.length-1])){ // impede entrar outro caractere que não seja número
-       i.value = v.substring(0, v.length-1);
-       return;
-    }
-    
-    i.setAttribute("maxlength", "14");
-    if (v.length == 3 || v.length == 7) i.value += ".";
-    if (v.length == 11) i.value += "-";
- 
- }
