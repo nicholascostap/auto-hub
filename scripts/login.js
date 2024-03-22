@@ -16,7 +16,14 @@ async function loginUsuario(){
         }
     });
 
-    let data = await response.json();
+    let data = await response.json()
 
-    alert(JSON.stringify(data))
+    if (response.status == 200){
+        console.log(data);
+        document.getElementById("status").innerText = 'Login Realizado com Sucesso!';
+    }else {
+        let error_message = data.data.errors;
+        document.getElementById("status").innerText = error_message + '!';
+        
+    }
 }

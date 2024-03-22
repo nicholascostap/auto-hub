@@ -24,5 +24,5 @@ async function cadastroUsuario(){
     
     let data = await resposta.json();
 
-    alert(JSON.stringify(data));
+    alert(JSON.stringify(data.data.errors));
 }
