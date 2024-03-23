@@ -21,8 +21,8 @@ body {
     flex-direction: column;
 }
 
-h1 {  		
-    color: #f1c62d;   	
+.left-login > h1 {  		
+    color: #f1c62d;  	
 }
 
 .right-login{
@@ -43,6 +43,7 @@ h1 {
     background:#221f1f;
     border-radius: 20px;
     box-shadow: 0px 10px 40px #d8c709;
+    margin-right: 150px;
 }
 
 .card-login > h1 {
@@ -71,7 +72,7 @@ h1 {
     font-size: 12pt;
     box-shadow:#d8c709;
     outline: none;
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
 .textfield > label{
@@ -84,15 +85,14 @@ h1 {
 }
 
 .btn-login{
-    width: 100%;
+    width: 60%;
     padding: 16px 0px;
-    margin: 25px;
     border: none;
     border-radius: 8px;
     outline: none;
     text-transform: uppercase;
     font-weight: 800;
-    letter-spacing: 3px;
+    letter-spacing: 5px;
     color: #2f2d28;
     background: #efbe0b;
     cursor: pointer
