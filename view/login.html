@@ -5,9 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="..\css\login.css">
     <title>Login</title>
-    <script src="../scrips/login.js" ></script>
+    <script src="../scripts/login.js"></script>
 </head>
 <body>
+    <header>
+        <div class="top-center-panel">
+            <a href="./carros.html">Carros</a>
+            <a href="..\view\contato.html">Contato</a>
+        </div>
+        <div class="logo-left-panel">
+            <a href="../index.html">
+                <img src="..\src\img\logo-remove-bg.png" alt="AutoHub">
+            </a>
+        </div>
+        <div class="top-right-panel">
+            <a href="./login.html">Login</a>
+            <a href="./cadastro.html">Cadastro</a>
+        </div>
+    </header>
+    <main>
     <div class="main-login">
         <div class="left-login">
             <h1>Faça Login <br> Seja Bem Vindo !</h1>
@@ -17,15 +33,17 @@
                 <h1>LOGIN</h1>
                 <div class="textfield">
                     <label for="email">E-mail</label>
-                    <input type="text" name="email" placeholder="E-mail">
+                    <input type="text" id="email" name="email" placeholder="E-mail">
                 </div>
                 <div class="textfield">
-                    <label for="Senha">Senha</label>
-                    <input type="password" name="senha" placeholder="Senha">
+                    <label for="senha">Senha</label>
+                    <input type="password" id ="password" name="senha" placeholder="Senha">
+                    <p id="status" style='color: #efbe0b;'></p>
                 </div>
-                <button class="btn-login">Login</button>    
+                <input class="btn-login" type="button" onclick="loginUsuario()" value="Login"/>
             </div>        
         </div>                 
-    </div>           
+    </div>
+    </main>          
 </body>
 </html>

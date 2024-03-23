@@ -7,23 +7,22 @@
         <script src="../scripts/cadastro.js"></script>
         <link rel="stylesheet" href="..\css\cadastro.css">
     </head>
-    <header>
-        <div class="logo-left-panel">
-            <a href="..\index.html">
-                <img src="..\src\img\logo-remove-bg.png" alt="AutoHub">
-            </a>
-        </div>
-        <h1>AutoHub</h1>
-        <div class="top-right-panel">
-            <a href="login.html">Login</a>
-        </div>
-    </header>
     <body>
-        <div class="topnav">
-            <a href="carros.html" class="nav-field">Carros</a>
-            <a href="contato.html" class="nav-field">Contato</a>
-            <a href="sobre.html" class="nav-field">Sobre</a>
-        </div>
+    <header>
+            <div class="top-center-panel">
+                <a href="./carros.html">Carros</a>
+                <a href="..\view\contato.html">Contato</a>
+            </div>
+            <div class="logo-left-panel">
+                <a href="../index.html">
+                    <img src="..\src\img\logo-remove-bg.png" alt="AutoHub">
+                </a>
+            </div>
+            <div class="top-right-panel">
+                <a href="./login.html">Login</a>
+                <a href="./cadastro.html">Cadastro</a>
+            </div>
+    </header>
         <div class="form">    
             <form>
                 <div class="user-icon">
@@ -43,27 +42,23 @@
                         E-mail
                     </label>
                     <input type="text" class="email-field" id="email" name="email"/>
-                    <br>
-                    <br>
+                    <p id="status_email" style='color: #efbe0b;'></p>
                     <label for="password" class="default-label"> 
                         Senha
                     </label>
                     <input type="password" class="password-field" id="password" name="password"/>
-                    <br>
-                    <br>
+                    <p id="status_password" style='color: #efbe0b;'></p>
                     <label for="cpf_cnpj" class="default-label"> 
                         CPF/CNPJ
                     </label>
                     <input type="text" class="default-field" id="cpf_cnpj" name="cpf_cnpj"/>
-                    <br>
-                    <br>
+                    <p id="status_cpf_cnpj" style='color: #efbe0b;'></p>
                     <label for="birthday" class="default-label"> 
                         Data de Nascimento 
                     </label>
                     <br>
                     <input type="date" class="date-field" id="birthday" name="birthday"/>
-                    <br>
-                    <br>
+                    <p id="status_birthday" style='color: #efbe0b;'></p>
                     <input type="button" class="button" onclick="cadastroUsuario()" value="Cadastrar"/>
                 </div>
             </form>

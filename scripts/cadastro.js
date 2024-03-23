@@ -5,8 +5,8 @@ async function cadastroUsuario(){
     let email = document.getElementById('email').value;
     let password = document.getElementById('password').value;
     let cpf_cnpj = document.getElementById('cpf_cnpj').value;
-    let birthday = document.getElementById('birthday').value;       
-    let resposta = await fetch(url, {
+    let birthday = document.getElementById('birthday').value;
+    let response = await fetch(url, {
         method: "POST",
         body: JSON.stringify({
             "name": name,
@@ -22,22 +22,34 @@ async function cadastroUsuario(){
         }        
     });
     
-    let data = await resposta.json();
+    let data = await response.json();
 
-    alert(JSON.stringify(data));
-}
-
-function formatCpf(i){
-   
-    var v = i.value;
-    
-    if(isNaN(v[v.length-1])){ // impede entrar outro caractere que não seja número
-       i.value = v.substring(0, v.length-1);
-       return;
+    errors = data.data.errors
+    if (response.status == 200){
+        cadastro = data.data;
+        document.getElementById("status_birthday").innerText = 'Cadastro Realizado: ' + cadastro;
+        setTimeout(function() {
+            window.location.href = "login.html";
+        }, 5000);
+    }else {
+        for(i in errors){
+            console.log(i)
+            if (i == 'email'){
+                let  error = errors.email;
+                document.getElementById("status_email").innerText = error + '!'; 
+            }
+            else if(i == 'password'){
+                let  error = errors.password;
+                document.getElementById("status_password").innerText = error + '!';
+            }
+            else if(i == 'cpf_cnpj'){
+                let error = errors.cpf_cnpj;
+                document.getElementById("status_cpf_cnpj").innerText = error + '!';
+            }
+            else if(i == 'birthday'){
+                let error = errors.birthday;
+                document.getElementById("status_birthday").innerText = error + '!';
+            }
+        }
     }
-    
-    i.setAttribute("maxlength", "14");
-    if (v.length == 3 || v.length == 7) i.value += ".";
-    if (v.length == 11) i.value += "-";
- 
- }
+}

@@ -1,11 +1,17 @@
+@font-face {
+    font-family: 'Raleway Thin';
+    src: url(../src/fonts/Raleway-VariableFont_wght.ttf) format('truetype');
+}
 body {
     margin: 0;
     font-family: 'Raleway Thin';
+    background-color: #1b1a1a;
+    padding: 0;
 }
 
 .main-login{
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
     background: #1b1a1a;
     display: flex;
     justify-content: center;
@@ -14,7 +20,7 @@ body {
 
 .left-login{
     width: 50vw;
-    height: 100vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,12 +28,15 @@ body {
 }
 
 .left-login > h1 {  		
-    color: #f1c62d;  	
+    color: #f1c62d;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .right-login{
     width: 50vw;
-    height: 100vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center; 
@@ -36,7 +45,7 @@ body {
 .card-login {
     width: 60%;
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
     flex-direction: column;
     padding: 30px 35px;
@@ -96,4 +105,63 @@ body {
     color: #2f2d28;
     background: #efbe0b;
     cursor: pointer
+}
+
+/* CSS DO HEADER */
+header {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    align-items: center;
+    font-family: 'Raleway Thin';
+}
+
+title{
+    color: #f1c62d;
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    color:#f1c62d;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 1em;
+    text-align: center;
+    border: 1px solid #f1c62d;
+    align-items: center;
+}
+
+.logo-left-panel img{
+    height: 100px;
+}
+
+.top-right-panel{
+    background-color:black;
+}
+.top-right-panel a {
+    padding: 1em 2em;
+    color: #f1c62d;
+    text-decoration: none;
+}
+
+.top-right-panel a:hover {
+    color: white;
+}
+
+
+.top-center-panel{
+    background-color: black;
+    
+}
+
+.top-center-panel a {
+    padding: 1em 2em;
+    color: #f1c62d;
+    text-decoration: none;
+}
+
+.top-center-panel a:hover {
+    color: white;
 }

@@ -8,10 +8,10 @@ body {
 }
 
 header {
-    color: #f1c62d;
-    background-color: #1b1a1a;
-    padding: 1em 0;
-    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    align-items: center;
 }
 
 title{
@@ -28,37 +28,38 @@ title{
     padding: 0 1em;
     text-align: center;
     border: 1px solid #f1c62d;
+    align-items: center;
 }
 
-img{
-    max-width: 180px;
-    height: auto;
-    display: block;
+.logo-left-panel img{
+    height: 100px;
 }
 
-.logo-left-panel{
-    position: absolute;
-    width: 100px;
-    height: 50px;
-    top: 0;
-    left: 0;
-    padding: 1em;
+.top-right-panel{
+    background-color:black;
+}
+.top-right-panel a {
+    padding: 1em 2em;
+    color: #f1c62d;
+    text-decoration: none;
 }
 
-.top-right.panel{
-    position: absolute;
-    width: 100px;
-    height: 50px;
-    top: 0;
-    right: 0;
-    float : right;
-    padding: 1em;
+.top-right-panel a:hover {
+    color: white;
 }
 
-.topnav{
-    background-color: #333;
-    overflow: hidden;
-    text-align: center;
-    color : #f1c62d;
-    padding : 1em;
+
+.top-center-panel{
+    background-color: black;
+    
+}
+
+.top-center-panel a {
+    padding: 1em 2em;
+    color: #f1c62d;
+    text-decoration: none;
+}
+
+.top-center-panel a:hover {
+    color: white;
 }
