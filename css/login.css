@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    font-family: 'Raleway Thin';
+}
+
+.main-login{
+    width: 100vw;
+    height: 100vh;
+    background: #1b1a1a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {  		
+    color: #f1c62d;   	
+}
+
+.right-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.card-login {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background:#221f1f;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #d8c709;
+}
+
+.card-login > h1 {
+    color: #efbe0b;
+    font-weight: 800;
+    margin: 0;
+}
+
+.textfield{
+    width: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+
+}
+
+.textfield > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #f3ec9f;
+    color: #030300;
+    font-size: 12pt;
+    box-shadow:#d8c709;
+    outline: none;
+    box-sizing: border-box
+}
+
+.textfield > label{
+    color:#efbe0b;
+    margin: bottom 10px;
+}
+
+.textfield > input::placeholder{
+    color: #2d2d2c;
+}
+
+.btn-login{
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #2f2d28;
+    background: #efbe0b;
+    cursor: pointer
+}
