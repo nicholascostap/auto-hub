@@ -27,8 +27,9 @@ title{
     max-width: 1200px;
     padding: 0 1em;
     text-align: center;
-    border: 1px solid #f1c62d;
+    border: px solid #f1c62d;
     align-items: center;
+    justify-content: flex-start;
 }
 
 .logo-left-panel img{
@@ -62,4 +63,12 @@ title{
 
 .top-center-panel a:hover {
     color: white;
+}
+
+.svg-diminuido {
+    width: 500px;
+    height: 800px;
+    margin-left: 700px;
+    margin-top: -180px;
+    justify-content: flex-end;
 }
