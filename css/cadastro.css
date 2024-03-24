@@ -19,14 +19,15 @@ img{
     height: 80vh;
     text-align: center;
     padding: 0 1em;
+    margin-top: 30px;
 }
 
 .default-label{
-    margin: 0 1em;
+    margin: 0 1%;
 }
 
 .default-field{
-    margin: 0 1em;
+    margin: 0 10em;
     border: 1px solid #f1c62d;
     border-radius: 5px;
     caret-color: #f1c62d;
@@ -57,31 +58,38 @@ img{
 }
 
 .date-field {
-    margin: 0 1em;
+    margin: 10 1em;
     border: 1px solid #f1c62d;
     border-radius: 5px;
+    width: 9em;
     caret-color: #f1c62d;
 }
 
 .frame {
-    border: 1px solid #f1c62d;
-    border-radius: 5px;
-    padding: 1em;
-    margin: 2em;
+    width: 100%;
+    border: none;
+    border-radius: 30px;
+    padding: 40px 10px;
+    background-color: #0202004a;
+    color: #efbe0b;
+    font-size: 12pt;
+    outline: none;
+    box-sizing: border-box;
+    box-shadow: 0px 10px 40px #d8c709;
 }
 
 .button {
-    background-color: #f1c62d;
+    width: 60%;
+    padding: 16px 0px;
     border: none;
-    color: #1b1a1a;
-    padding: 0.5em;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 5px;
-    margin: 1em 1em;
-    cursor: pointer;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 5px;
+    color: #2f2d28;
+    background: #efbe0b;
+    cursor: pointer
 }
 
 .button:hover {
@@ -132,8 +140,8 @@ a:link {
 
 .text-title{
     font-size: 2em;
-    margin: 0;
-    padding: 0;
+    margin: 10;
+    padding: 10;
     align-items: center;
     text-align: center;
 }
