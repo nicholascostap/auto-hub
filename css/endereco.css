@@ -7,19 +7,20 @@ body {
     margin: 0;
     padding: 0;
 }
+
+main {
+    display: grid;
+}
 img{
     max-width: 125px;
     height: auto;
     display: block;
 }
 .form{
-    display: flex;
-    justify-content: center;
+    justify-self: center;
     align-items: center;
-    height: 80vh;
     text-align: center;
-    padding: 0 1em;
-    margin-top: -20px;
+    padding: 40px;
 }
 
 .default-label{
@@ -154,6 +155,7 @@ a:link {
 }
 
 
+/* DIVS HEADER */
 
 header {
     display: flex;
@@ -211,4 +213,77 @@ title{
 
 .top-center-panel a:hover {
     color: white;
+}
+
+
+/* Divs da Listagem de Endereço*/
+.frame_list {
+    display: grid;
+    border: none;
+    border-radius: 30px;
+    padding: 40px 30px;
+    background-color: #0202004a;
+    color: #efbe0b;
+    font-size: 12pt;
+    outline: none;
+    box-sizing: border-box;
+    box-shadow: 0px 10px 40px #d8c709;
+    justify-self: right;
+    align-items: center;
+    text-align: center;
+}
+.section_list_address {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 400px;
+}
+
+.default-label-list{
+    margin: 0 1%;
+}
+
+.default-field-list{
+    margin: 0 10em;
+    border: 1px solid #f1c62d;
+    border-radius: 5px;
+    caret-color: #f1c62d;
+}
+
+.email-field-list{
+    margin: 0 1em;
+    border: 1px solid #f1c62d;
+    border-radius: 5px;
+    width: 20em;
+    caret-color: #f1c62d;
+}
+
+.cep-field-list{
+    margin: 0 1em;
+    border: 1px solid #f1c62d;
+    border-radius: 5px;
+    width: 21em;
+    caret-color: #f1c62d;
+}
+
+.tittle-field-list {
+    margin: 0 1em;
+    border: 1px solid #f1c62d;
+    border-radius: 5px;
+    width: 20em;
+    caret-color: #f1c62d;
+}
+
+.address-field-list {
+    margin: 10 1em;
+    border: 1px solid #f1c62d;
+    border-radius: 5px;
+    width: 20em;
+    caret-color: #f1c62d;
+}
+
+.complement-field-list {
+    margin: 0 1em;
+    border: 1px solid #f1c62d;
+    border-radius: 5px;
+    caret-color: #f1c62d;
 }

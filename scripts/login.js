@@ -12,18 +12,21 @@ async function loginUsuario(){
 
         }),
         headers: {
-            'Content-Type': 'application/json'
+            'Content-Type': 'application/json',
+            'Cookie' : 'gowash_session=0hGqRHf0q38ETNgEcJGce30LcPtuPKo48uKtb7Oj'
         }
     });
 
     let data = await response.json()
 
     if (response.status == 200){
+        window.localStorage.clear();
         console.log(data);
+        let access_token = data.access_token
         document.getElementById("status").innerText = 'Login Realizado com Sucesso!';
+        window.localStorage.setItem("access_token", access_token)
     }else {
         let error_message = data.data.errors;
         document.getElementById("status").innerText = error_message + '!';
-        
     }
 }
