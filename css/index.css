@@ -12,7 +12,6 @@ header {
     justify-content: space-around;
     background-color: #000000;
     align-items: center;
-
 }
 
 title{
@@ -25,14 +24,14 @@ title{
 .container{
     color:#f1c62d;
     margin: 0 auto;
-    max-width: 1200px;
     padding: 0 1em;
     text-align: center;
     border: 1px solid #f1c62d;
 }
 
 .logo-left-panel img{
-    height: 100px;
+    height: 150px;
+    width: auto
 }
 
 .top-right-panel{
@@ -55,4 +54,12 @@ title{
     text-align: center;
     color : #f1c62d;
     padding : 1em;
+}
+
+footer{
+    color:#f1c62d;
+    margin: 0 auto;
+    padding: 0 1em;
+    text-align: center;
+    border: 1px solid #f1c62d;
 }

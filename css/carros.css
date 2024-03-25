@@ -9,6 +9,8 @@ body {
 }
 
 header {
+    display: flex;
+    justify-content: space-around;
     color: #f1c62d;
     background-color: #1b1a1a;
     padding: 1em 0;
@@ -32,20 +34,19 @@ img{
     display: block;
 }
 
-.logo-left-panel{
-    position: absolute;
-    width: 100px;
-    height: 50px;
-    top: 0;
-    left: 0;
-    padding: 1em;
+.logo-left-panel img{
+    height: 150px;
+    width: auto
 }
 
-title{
+.main-title{
     color: #f1c62d;
     font-size: 2em;
     margin: 0;
     padding: 0;
+    text-align: center;
+    justify-content: center;
+    display: flex;
 }
 
 .form{
@@ -55,55 +56,6 @@ title{
     height: 100vh;
     text-align: center;
     padding: 0 1em;
-}
-
-.default-label{
-    margin: 0 1em;
-}
-
-.default-field{
-    margin: 0 1em;
-    border: 1px solid #f1c62d;
-    border-radius: 5px;
-    caret-color: #f1c62d;
-}
-
-.email-field{
-    margin: 0 1em;
-    border: 1px solid #f1c62d;
-    border-radius: 5px;
-    width: 20em;
-    caret-color: #f1c62d;
-}
-
-.name-field{
-    margin: 0 1em;
-    border: 1px solid #f1c62d;
-    border-radius: 5px;
-    width: 20em;
-    caret-color: #f1c62d;
-}
-
-.password-field {
-    margin: 0 1em;
-    border: 1px solid #f1c62d;
-    border-radius: 5px;
-    width: 20em;
-    caret-color: #f1c62d;
-}
-
-.date-field {
-    margin: 0 1em;
-    border: 1px solid #f1c62d;
-    border-radius: 5px;
-    caret-color: #f1c62d;
-}
-
-.frame {
-    border: 1px solid #f1c62d;
-    border-radius: 5px;
-    padding: 1em;
-    margin: 2em;
 }
 
 .button {
@@ -123,6 +75,9 @@ title{
 .button:hover {
     background-color: #333;
     color: #f1c62d;
+    font-weight: bold;
+    -webkit-transition: all 3s;
+    transition: all 3s;
 }
 
 .topnav{
@@ -141,29 +96,13 @@ title{
 }
 
 a:link {
-    color: #1b1a1a;
+    color: #000000;
     text-decoration: none;
 }
 
 @font-face {
-    font-family: 'Raleway Thin';
-    src: url(../src/fonts/Raleway-VariableFont_wght.ttf) format('truetype');
-}
-
-.user-icon{
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100px;
-    height: 100px;
-    background-color: #f1c62d;
-    border: 1px solid #f1c62d;
-    align-items: center;
-    align-content: center;
-    border-radius: 100%;
-    display: block;
-    margin: 0 auto;
-    padding: 0.20em;
+    font-family: 'Andes ExtraLight';
+    src: url(../src/fonts/Andes-ExtraLight.ttf) format('truetype');
 }
 
 .text-title{
@@ -194,6 +133,8 @@ a:link {
 }
 
 .card{
+    justify-content: center;
+    align-items: center;
     border: 1px solid #f1c62d;
     border-radius: 5px;
     padding: 1em;
@@ -203,7 +144,10 @@ a:link {
 .card-img{
     width: 180px;
     height: 101px;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
 }
 
 .button-card {
