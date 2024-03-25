@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Endereco</title>
+    <script src="../scripts/endereco.js"></script>
+    <link rel="stylesheet" href="..\css\endereco.css">
+</head>
+<body>
+    <header>
+        <div class="top-center-panel">
+            <a href="./carros.html">Carros</a>
+            <a href="..\view\contato.html">Contato</a>
+        </div>
+        <div class="logo-left-panel">
+            <a href="../index.html">
+                <img src="..\src\img\logo-remove-bg.png" alt="AutoHub">
+            </a>
+        </div>
+        <div class="top-right-panel">
+            <a href="./login.html">Login</a>
+            <a href="./cadastro.html">Cadastro</a>
+        </div>
+    </header>    
+    <main>
+    <div class="form">    
+        <form>
+            <div class="user-icon">
+                <img src="..\src\icon\person-icon.png" alt="Usuário">
+            </div>
+            <div name="text-title">
+                <h2>Cadastro de Endereço</h2>
+            </div>
+            <div class="frame">
+                <label for="title" class="default-label"> 
+                    Titulo
+                </label>
+                <input type="text" class="tittle-field" id="title" name="title"/>
+                <p id="status_title" style='color: #efbe0b;'></p>
+                <label for="cep" class="default-label"> 
+                    CEP
+                </label>
+                <input type="text" class="cep-field" id="cep" name="cep"/>
+                <p id="status_cep" style='color: #efbe0b;'></p>
+                <label for="address" class="default-label"> 
+                    Endereço
+                </label>
+                <input type="text" class="address-field" id="address" name="address"/>
+                <p id="status_address" style='color: #efbe0b;'></p>
+                <label for="number" class="default-label"> 
+                    Número
+                </label>
+                <input type="text" class="default-field" id="number" name="number"/>
+                <p id="status_number" style='color: #efbe0b;'></p>
+                <label for="complement" class="default-label"> 
+                    Complemento
+                </label>
+                <br>
+                <input type="txt" class="complement-field" id="complement" name="complement"/>
+                <p id="status_cadastro" style='color: #efbe0b;'></p>
+                <input type="button" class="button" onclick="cadastroEndereco()" value="Cadastrar"/>
+                </div>
+              </form>
+            </div>   
+        </main>
+    </body>
+</html>
