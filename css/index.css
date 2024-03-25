@@ -1,5 +1,5 @@
 body {
-    background-color: #000000;
+    background-color: #333;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     line-height: 1.6;
@@ -10,7 +10,7 @@ body {
 header {
     display: flex;
     justify-content: space-around;
-    background-color: #000000;
+    background-color: black;
     align-items: center;
 }
 
@@ -27,6 +27,7 @@ title{
     padding: 0 1em;
     text-align: center;
     border: 1px solid #f1c62d;
+    align-items: center;
 }
 
 .logo-left-panel img{
@@ -35,17 +36,32 @@ title{
 }
 
 .top-right-panel{
-    background-color: #000000;
+    background-color:black;
 }
 .top-right-panel a {
-    padding-right: 15px;
+    padding: 1em 2em;
+    color: #f1c62d;
+    text-decoration: none;
 }
 
-.top-center-panel{
-    background-color: #000000;
+.top-right-panel a:hover {
+    color: white;
 }
+
+
+.top-center-panel{
+    background-color: black;
+    
+}
+
 .top-center-panel a {
-    padding-right: 15px;
+    padding: 1em 2em;
+    color: #f1c62d;
+    text-decoration: none;
+}
+
+.top-center-panel a:hover {
+    color: white;
 }
 
 .topnav{
