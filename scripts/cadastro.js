@@ -23,8 +23,7 @@ async function cadastroUsuario(){
     });
     
     let data = await response.json();
-
-    errors = data.data.errors
+    let errors = data.data.errors
     if (response.status == 200){
         cadastro = data.data;
         document.getElementById("status_birthday").innerText = 'Cadastro Realizado: ' + cadastro;
