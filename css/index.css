@@ -1,6 +1,11 @@
+@font-face {
+    font-family: 'Raleway Thin';
+    src: url(../src/fonts/Raleway-VariableFont_wght.ttf) format('truetype');
+}
+
 body {
     background-color: #1b1a1a;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway Thin';
     font-size: 16px;
     line-height: 1.6;
     margin: 0;
@@ -12,6 +17,11 @@ header {
     justify-content: space-around;
     background-color: black;
     align-items: center;
+}
+
+
+main {
+    display: grid;
 }
 
 title{
@@ -52,7 +62,7 @@ title{
 
 .top-center-panel{
     background-color: black;
-    
+
 }
 
 .top-center-panel a {
@@ -66,9 +76,31 @@ title{
 }
 
 .svg-diminuido {
-    width: 500px;
+    width: 400px;
     height: 800px;
-    margin-left: 700px;
-    margin-top: -180px;
+    margin-left: 650px;
+    margin-top: -500px;
     justify-content: flex-end;
+}
+
+.animacao {
+    background-color: yellow;
+    height: 300px;
+    padding: 100px;
+    border-radius: 10px;
+    max-width: 980px;
+    justify-self: center;
+}
+
+.text-animacao > h1 {
+    margin-right: 500px;
+    color: black;
+}
+
+.text-animacao > h3 {
+    color: black;
+}
+
+.text-animacao > h4 {
+    color: black;
 }
