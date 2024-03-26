@@ -126,15 +126,18 @@ body {
 .cards{
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 80vh;
+    display: grid;
     text-align: center;
     padding: 0 1em;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .card{
+    display: grid;
+    justify-content: center;
+    justify-items: center;
     border: 1px solid #f1c62d;
-    border-radius: 5px;
+    border-radius: 6px;
     padding: 1em;
     margin: 2em;
 }
@@ -170,6 +173,7 @@ header {
     justify-content: space-around;
     background-color: black;
     align-items: center;
+    margin-bottom: 200px;
 }
 
 title{
@@ -177,6 +181,7 @@ title{
     font-size: 2em;
     margin: 0;
     padding: 0;
+    margin-top: 200px;
 }
 
 .logo-left-panel img{

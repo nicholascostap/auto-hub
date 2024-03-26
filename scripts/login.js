@@ -21,12 +21,21 @@ async function loginUsuario(){
 
     if (response.status == 200){
         document.getElementById("status").innerText = '';
-        document.getElementById("status").innerText = '';
         window.localStorage.clear();
         console.log(data);
         let access_token = data.access_token
         document.getElementById("status").innerText = 'Login Realizado com Sucesso!';
         window.localStorage.setItem("access_token", access_token)
+        let userData = data.user;
+        console.log(userData)
+        let values = {
+            name: userData.name,
+            email: userData.email,
+            cpfCnpj : userData.cpf_cnpj,
+            birthDate : userData.birthday
+        }
+    
+        window.localStorage.setItem("userData", JSON.stringify(values));
     }else {
         let error_message = data.data.errors;
         document.getElementById("status").innerText = error_message + '!';

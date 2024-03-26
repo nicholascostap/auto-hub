@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AutoHub</title>
+        <link rel="stylesheet" href="..\css\perfil.css">
+        <script src="../scripts/perfil.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="top-center-panel">
+                <a href=".\carros.html">Carros</a>
+                <a href=".\perfil.html">Perfil</a>
+            </div>
+            <div class="logo-left-panel">
+                <a href="../index.html">
+                    <img src="..\src\img\logo-remove-bg.png" alt="AutoHub">
+                </a>
+            </div>
+            <div class="top-right-panel">
+                <a href=".\login.html">Login</a>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Cadastro</a>
+                    <div class="dropdown-content">
+                        <a href=".\cadastro.html">Usuário</a>
+                        <a href=".\endereco.html">Endereço</a>
+                    </div>
+                </li>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <h2>Seja Bem-vindo ao seu Perfil!</h2>
+            </div>
+            <div class="profile">
+                <form>
+                    <div class="user-data">
+                        <p class='nome'>Nome: </p>
+                        <p class='email'>Email:</p>
+                        <p class='birth-date'>Data de Aniversário:</p>
+                        <p class='cpf-cnpj'>CPF/CNPJ:</p>
+                        
+                        <input type='button' class="add-button" onclick="listarEndereco()" value="Listar Endereços"></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <section class="section_list_address"></section>
+        </main>
+    </body>
+</html>

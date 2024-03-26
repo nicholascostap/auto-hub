@@ -57,21 +57,30 @@ async function cadastroEndereco(){
         }
     }
 }
-const url_list = 'https://api-go-wash-efc9c9582687.herokuapp.com/api/auth/address'
- async function listarEndereco(){
-     let access_token = get_local_storage();
-     let response = await fetch(url_list, {
-         method: "GET",
-         headers: {
-             'Content-Type': 'application/json',
-             'Authorization': 'Bearer ' + access_token,
-             'Cookie' : 'gowash_session=0hGqRHf0q38ETNgEcJGce30LcPtuPKo48uKtb7Oj'
-         }        
-     });
-     let datalist = await response.json()
-     console.log(datalist)
-}
-listarEndereco()
+// const url_list = 'https://api-go-wash-efc9c9582687.herokuapp.com/api/auth/address'
+//  async function listarEndereco(){
+//     //  let access_token = get_local_storage();
+//      let response = await fetch(url_list, {
+//          method: "GET",
+//          headers: {
+//              'Content-Type': 'application/json',
+//              'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vYXBpLWdvLXdhc2gtZWZjOWM5NTgyNjg3Lmhlcm9rdWFwcC5jb20vYXBpL2xvZ2luIiwiaWF0IjoxNzExNDc0MTY2LCJuYmYiOjE3MTE0NzQxNjYsImp0aSI6ImFYenpvRG4zM2N4UkxJdFoiLCJzdWIiOiIzMTYiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.ZctQ0ocTrfihBa5AasDwg2FCluq8JLSGgxbFLgplaN0',
+//              'Cookie' : 'gowash_session=0hGqRHf0q38ETNgEcJGce30LcPtuPKo48uKtb7Oj'
+//          }        
+//      });
+//      let datalist = await response.json()
+//      console.log(datalist);
+//      for (i of datalist.data) {
+//         let title = i.title;
+//         let cep = i.cep;
+//         let address = i.address;
+//         let number = i.number;
+//         let complement = i.complement;
+//         console.log(title, cep, address, number, complement);
+//         console.log("#####################################")
+//      }
+// }
+// listarEndereco()
 // const url_delete = 'https://api-go-wash-efc9c9582687.herokuapp.com/api/auth/address'
 // async function deletarEndereco(){
 //     // let access_token = get_local_storage();

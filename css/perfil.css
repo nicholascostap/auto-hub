@@ -1,0 +1,156 @@
+@font-face {
+    font-family: 'Raleway Thin';
+    src: url(../src/fonts/Raleway-VariableFont_wght.ttf) format('truetype');
+}
+
+body {
+    background-color: #1b1a1a;
+    font-family: 'Raleway Thin';
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    align-items: center;
+}
+
+main {
+    display: grid;
+}
+
+title{
+    color: #f1c62d;
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    color:#f1c62d;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 1em;
+    text-align: center;
+    border: px solid #f1c62d;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.logo-left-panel img{
+    height: 100px;
+}
+
+.top-right-panel{
+    background-color:black;
+}
+.top-right-panel a {
+    padding: 1em 2em;
+    color: #f1c62d;
+    text-decoration: none;
+}
+
+.top-right-panel a:hover {
+    color: white;
+}
+
+
+.top-center-panel{
+    background-color: black;
+
+}
+
+.top-center-panel a {
+    padding: 1em 2em;
+    color: #f1c62d;
+    text-decoration: none;
+}
+
+.top-center-panel a:hover {
+    color: white;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: black;
+    color: #f1c62d;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown-content {
+    position: absolute;
+    background-color: black;
+    min-width: 105px;
+    z-index: 1;
+    display: none;
+    text-align: center;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    background-color: #333;
+    color: #f1c62d;
+    border-radius: 10px;
+}
+
+.user-data {
+    background-color: black;
+    color: #f1c62d;
+    padding: 1em;
+    margin: 1em;
+    border: 1px solid #f1c62d;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+input[readonly] {
+    background-color: black;
+    color: #f1c62d;
+    border: none;
+    text-align: center;
+}
+
+.profile p {
+    color: #f1c62d;
+}
+.add-button {
+    width: 35%;
+    padding: 30px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 5px;
+    color: #1b1a1a;
+    background-color: #efbe0b;
+    cursor: pointer
+}
+.section_list_address {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas de largura igual */
+    gap: 20px; /* Espaço entre as colunas */
+    padding: 10px;
+}
+
+.endereco_lista {
+    background-color: black;
+    border-radius: 10px; /* Adicione uma borda para visualização */
+    border: 1px solid #f1c62d;
+    padding: 20px; /* Adicione algum espaço interno para os elementos */
+}
+.endereco_lista p {
+    color: #f1c62d;
+}
