@@ -102,7 +102,7 @@ title{
     color: #f1c62d;
 }
 
-.card-user-data {
+.user-data {
     background-color: black;
     color: #f1c62d;
     padding: 1em;
@@ -112,4 +112,31 @@ title{
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+input[readonly] {
+    background-color: black;
+    color: #f1c62d;
+    border: none;
+    text-align: center;
+}
+
+.add-button {
+    background-color: #f1c62d;
+    padding: 1em;
+    margin: 1em;
+    border: 1px solid #f1c62d;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.add-button::before {
+    content: "+";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5em;
+    color: #fff;
 }
