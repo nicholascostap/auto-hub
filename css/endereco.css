@@ -11,10 +11,12 @@ body {
 main {
     display: grid;
 }
-img{
+.img_icon {
     max-width: 125px;
     height: auto;
-    display: block;
+    display: flex;
+    margin-left: -12px;
+    margin-bottom: 4px;
 }
 .form{
     justify-self: center;
@@ -105,33 +107,13 @@ img{
     color: #f1c62d;
 }
 
-.topnav{
-    background-color: #333;
-    overflow: hidden;
-    text-align: center;
-    color: #f1c62d;
-    padding: 1em;
-}
-
-.nav-field{
-    background-color: #f1c62d;
-    padding: 1em 2em;
-    border: 1px solid #f1c62d;
-    border-radius: 5px;
-}
-
-a:link {
-    color: #1b1a1a;
-    text-decoration: none;
-}
-
 @font-face {
     font-family: 'Raleway Thin';
     src: url(../src/fonts/Raleway-VariableFont_wght.ttf) format('truetype');
 }
 
 .user-icon{
-    position: relative;
+    position: static;
     top: 0;
     left: 0;
     width: 100px;
@@ -141,7 +123,6 @@ a:link {
     align-items: center;
     align-content: center;
     border-radius: 100%;
-    display: block;
     margin: 0 auto;
     padding: 0.20em;
 }
@@ -319,24 +300,6 @@ footer a:hover{
     width: 200px;
     height: 200px;
 }
-.button {
-    width: 35%;
-    padding: 30px;
-    border: none;
-    border-radius: 10px;
-    outline: none;
-    text-transform: uppercase;
-    font-weight: 800;
-    letter-spacing: 5px;
-    color: yellow;
-    background-color: black;
-    cursor: pointer
-}
-
-.button:hover {
-    background-color: #2f2f2f;
-    color: #f1c62d;
-}
 .icons img {
     width: 25px;
     height: 25px;
@@ -350,4 +313,34 @@ footer a:hover{
     display: flex;
     align-items: center;
     gap: 10px;
+}
+/* DROPDOWN BOTOM */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: black;
+    color: #f1c62d;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown-content {
+    position: absolute;
+    background-color: black;
+    min-width: 105px;
+    z-index: 1;
+    display: none;
+    text-align: center;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    background-color: #333;
+    color: #f1c62d;
+    border-radius: 10px;
 }

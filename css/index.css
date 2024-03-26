@@ -169,3 +169,34 @@ footer a:hover{
     align-items: center;
     gap: 10px;
 }
+
+/* DROPDOWN BOTOM */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: black;
+    color: #f1c62d;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown-content {
+    position: absolute;
+    background-color: black;
+    min-width: 105px;
+    z-index: 1;
+    display: none;
+    text-align: center;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    background-color: #333;
+    color: #f1c62d;
+    border-radius: 10px;
+}

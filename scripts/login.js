@@ -20,6 +20,8 @@ async function loginUsuario(){
     let data = await response.json()
 
     if (response.status == 200){
+        document.getElementById("status").innerText = '';
+        document.getElementById("status").innerText = '';
         window.localStorage.clear();
         console.log(data);
         let access_token = data.access_token

@@ -29,6 +29,10 @@ async function cadastroEndereco(){
     let data = await response.json()
     let errors = data.data.errors
     if (response.status == 200){
+        document.getElementById("status_title").innerText = '';
+        document.getElementById("status_cep").innerText = '';
+        document.getElementById("status_address").innerText = '';
+        document.getElementById("status_number").innerText = '';
         console.log(data);
         document.getElementById("status_cadastro").innerText = 'Cadastro de Endereço Realizado com Sucesso!';
      }else {
@@ -49,26 +53,25 @@ async function cadastroEndereco(){
              else if(i == 'number'){
                  let error = errors.numero;
                  document.getElementById("status_number").innerText = error + '!';
-             }
+            }
         }
- }
-console.log(data);
+    }
 }
-// const url_list = 'https://api-go-wash-efc9c9582687.herokuapp.com/api/auth/address'
-// async function listarEndereco(){
-//     let access_token = get_local_storage();
-//     let response = await fetch(url_list, {
-//         method: "GET",
-//         headers: {
-//             'Content-Type': 'application/json',
-//             'Authorization': 'Bearer ' + access_token,
-//             'Cookie' : 'gowash_session=0hGqRHf0q38ETNgEcJGce30LcPtuPKo48uKtb7Oj'
-//         }        
-//     });
-//     let datalist = await response.json()
-// }
-
-
+const url_list = 'https://api-go-wash-efc9c9582687.herokuapp.com/api/auth/address'
+ async function listarEndereco(){
+     let access_token = get_local_storage();
+     let response = await fetch(url_list, {
+         method: "GET",
+         headers: {
+             'Content-Type': 'application/json',
+             'Authorization': 'Bearer ' + access_token,
+             'Cookie' : 'gowash_session=0hGqRHf0q38ETNgEcJGce30LcPtuPKo48uKtb7Oj'
+         }        
+     });
+     let datalist = await response.json()
+     console.log(datalist)
+}
+listarEndereco()
 // const url_delete = 'https://api-go-wash-efc9c9582687.herokuapp.com/api/auth/address'
 // async function deletarEndereco(){
 //     // let access_token = get_local_storage();

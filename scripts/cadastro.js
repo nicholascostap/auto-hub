@@ -25,12 +25,20 @@ async function cadastroUsuario(){
     let data = await response.json();
     let errors = data.data.errors
     if (response.status == 200){
+        document.getElementById("status_email").innerText = '';
+        document.getElementById("status_password").innerText = '';
+        document.getElementById("status_cpf_cnpj").innerText = '';
+        document.getElementById("status_birthday").innerText = '';
         cadastro = data.data;
-        document.getElementById("status_birthday").innerText = 'Cadastro Realizado: ' + cadastro;
+        document.getElementById("status_birthday").innerText = 'Cadastro Realizado \n' + cadastro;
         setTimeout(function() {
             window.location.href = "login.html";
         }, 5000);
     }else {
+        document.getElementById("status_email").innerText = '';
+        document.getElementById("status_password").innerText = '';
+        document.getElementById("status_cpf_cnpj").innerText = '';
+        document.getElementById("status_birthday").innerText = '';
         for(i in errors){
             console.log(i)
             if (i == 'email'){
