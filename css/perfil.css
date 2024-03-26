@@ -19,7 +19,6 @@ header {
     align-items: center;
 }
 
-
 main {
     display: grid;
 }
@@ -75,36 +74,6 @@ title{
     color: white;
 }
 
-.svg-diminuido {
-    width: 400px;
-    height: 800px;
-    margin-left: 650px;
-    margin-top: -500px;
-    justify-content: flex-end;
-}
-
-.animacao {
-    background-color: yellow;
-    height: 300px;
-    padding: 100px;
-    border-radius: 10px;
-    max-width: 980px;
-    justify-self: center;
-}
-
-.text-animacao > h1 {
-    margin-right: 500px;
-    color: black;
-}
-
-.text-animacao > h3 {
-    color: black;
-}
-
-.text-animacao > h4 {
-    color: black;
-}
-
 .dropdown {
     position: relative;
     display: inline-block;
@@ -133,27 +102,14 @@ title{
     color: #f1c62d;
 }
 
-.circle {
-    background-color: #f1c62d;
+.card-user-data {
+    background-color: black;
     color: #f1c62d;
+    padding: 1em;
+    margin: 1em;
+    border: 1px solid #f1c62d;
+    border-radius: 10px;
+    justify-content: center;
     align-items: center;
-    align-content: center;
-    padding: 1em 1em 1em 1em;
-    border-radius: 100%;
-    text-decoration: none;
-    position: relative;
-    display: block;
-    margin: 0 auto;
-    padding: 0.20em;
-    width: 40px;
-    height: 40px;
-    position: relative
-}
-
-.profile img {
-    height: 50px;
-    width: 50px;
-    border-radius: 100%;
-    position: relative;
-    z-index: 1;
+    text-align: center;
 }

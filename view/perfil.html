@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AutoHub</title>
+        <link rel="stylesheet" href="..\css\perfil.css">
+    </head>
+    <body>
+        <header>
+            <div class="top-center-panel">
+                <a href="..\view\carros.html">Carros</a>
+                <a href="..\view\contato.html">Contato</a>
+            </div>
+            <div class="logo-left-panel">
+                <a href="index.html">
+                    <img src="..\src\img\logo-remove-bg.png" alt="AutoHub">
+                </a>
+            </div>
+            <div class="top-right-panel">
+                <a href="..\view\login.html">Login</a>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Cadastro</a>
+                    <div class="dropdown-content">
+                        <a href="..\view\cadastro.html">Usuário</a>
+                        <a href="..\view\endereco.html">Endereço</a>
+                    </div>
+                </li>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <h2>Seja bem-vindo ao seu Perfil</h2>
+            </div>
+            <div class="profile">
+                <form>
+                    <div class="card-user-data">
+                        <p></p>
+                        <label for="nome">
+                            Nome:
+                        </label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+                        <p></p>
+                        <label for="email">
+                            Email:
+                        </label>
+                        <input type="email" id="email" name="email" placeholder="Digite seu email">
+                        <p></p>
+                        <label for="senha">
+                            Senha:
+                        </label>
+                        <input type="password" id="senha" name="senha" placeholder="Digite sua senha">
+                        <p></p>
+                        <label for="telefone">
+                            Telefone:
+                        </label>
+                        <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone">
+                        <p></p>
+                        <label for="endereco">
+                            Endereço:
+                        </label>
+                        <input type="text" id="endereco" name="endereco" placeholder="Digite seu endereço">
+                        <p></p>
+                        <label for="cep">
+                            CEP:
+                        </label>
+                        <input type="text" id="cep" name="cep" placeholder="Digite seu CEP">
+                        <p></p>
+                        <label for="cidade">
+                            Cidade:
+                        </label>
+                        <input type="text" id="cidade" name="cidade" placeholder="Digite sua cidade">
+                        <p></p>
+                        <label for="estado">
+                            Estado:
+                        </label>
+                        <input type="text" id="estado" name="estado" placeholder="Digite seu estado">
+                        <button class="button-card">Salvar</button>
+                    </div>
+                    <div class="user-address">
+                        <h3>Endereços cadastrados</h3>
+                        <div class="address">
+                            <input type="text" id="endereco" name="endereco-completo">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </body>
+</html>
