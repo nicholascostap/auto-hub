@@ -1,4 +1,4 @@
-const url_cadastro = 'https://api-go-wash-efc9c9582687.herokuapp.com/api/auth/address';
+const url_cadastro = 'https://go-wash-api.onrender.com/api/auth/address';
 
 function get_local_storage(){
     return window.localStorage.getItem('access_token');
@@ -57,7 +57,7 @@ async function cadastroEndereco(){
         }
     }
 }
-// const url_list = 'https://api-go-wash-efc9c9582687.herokuapp.com/api/auth/address'
+// const url_list = 'https://go-wash-api.onrender.com/api/auth/address'
 //  async function listarEndereco(){
 //     //  let access_token = get_local_storage();
 //      let response = await fetch(url_list, {
@@ -81,7 +81,7 @@ async function cadastroEndereco(){
 //      }
 // }
 // listarEndereco()
-// const url_delete = 'https://api-go-wash-efc9c9582687.herokuapp.com/api/auth/address'
+// const url_delete = 'https://go-wash-api.onrender.com/api/auth/address'
 // async function deletarEndereco(){
 //     // let access_token = get_local_storage();
 //     let response = await fetch(url_delete, {

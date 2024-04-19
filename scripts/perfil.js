@@ -20,7 +20,7 @@ async function fillUserData(){
 }
 
 
-const url_list = 'https://api-go-wash-efc9c9582687.herokuapp.com/api/auth/address'
+const url_list = 'https://go-wash-api.onrender.com/api/auth/address'
  async function listarEndereco(){
     let access_token = window.localStorage.getItem('access_token');
      let response = await fetch(url_list, {
