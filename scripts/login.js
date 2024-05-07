@@ -19,15 +19,17 @@ async function loginUsuario(){
 
     let data = await response.json()
 
-    if (response.status == 200){
+    if (response.status == 200) {
+        
         document.getElementById("status").innerText = '';
         window.localStorage.clear();
-        console.log(data);
-        let access_token = data.access_token
+
+        let accessToken = data.access_token
         document.getElementById("status").innerText = 'Login Realizado com Sucesso!';
-        window.localStorage.setItem("access_token", access_token)
+        window.localStorage.setItem("access_token", accessToken)
+
         let userData = data.user;
-        console.log(userData)
+        
         let values = {
             name: userData.name,
             email: userData.email,
@@ -36,8 +38,11 @@ async function loginUsuario(){
         }
     
         window.localStorage.setItem("userData", JSON.stringify(values));
-    }else {
-        let error_message = data.data.errors;
-        document.getElementById("status").innerText = error_message + '!';
+        window.location.href = '/view/endereco.html'
+        
+    }
+    else {
+        let errorMessage = data.data.errors;
+        document.getElementById("status").innerText = errorMessage + '!';
     }
 }
