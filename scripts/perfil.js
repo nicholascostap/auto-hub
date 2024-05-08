@@ -75,3 +75,5 @@ const url_list = 'https://go-wash-api.onrender.com/api/auth/address'
         document.querySelector('.section_list_address').appendChild(enderecoDiv);
      }
 }
+
+listarEndereco();

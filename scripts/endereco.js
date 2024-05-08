@@ -28,72 +28,34 @@ async function cadastroEndereco(){
     });
     let data = await response.json()
     let errors = data.data.errors
-    if (response.status == 200){
+    if (response.status == 200) {
         document.getElementById("status_title").innerText = '';
         document.getElementById("status_cep").innerText = '';
         document.getElementById("status_address").innerText = '';
         document.getElementById("status_number").innerText = '';
         console.log(data);
         document.getElementById("status_cadastro").innerText = 'Cadastro de Endereço Realizado com Sucesso!';
-     }else {
-         for(i in errors){
-             console.log(i)
-             if (i == 'title'){
-                 let  error = errors.title;
-                 document.getElementById("status_title").innerText = error + '!'; 
-             }
-             else if(i == 'cep'){
-                 let  error = errors.cep;
-                 document.getElementById("status_cep").innerText = error + '!';
-             }
-             else if(i == 'address'){
-                 let error = errors.endereco;
-                 document.getElementById("status_address").innerText = error + '!';
-             }
-             else if(i == 'number'){
-                 let error = errors.numero;
-                 document.getElementById("status_number").innerText = error + '!';
+        window.location.href = '/view/perfil.html'
+    }
+    else {
+        for(i in errors){
+            console.log(i)
+            if (i == 'title'){
+                let  error = errors.title;
+                document.getElementById("status_title").innerText = error + '!'; 
             }
+            else if(i == 'cep'){
+                let  error = errors.cep;
+                document.getElementById("status_cep").innerText = error + '!';
+            }
+            else if(i == 'address'){
+                let error = errors.endereco;
+                document.getElementById("status_address").innerText = error + '!';
+            }
+            else if(i == 'number'){
+                let error = errors.numero;
+                document.getElementById("status_number").innerText = error + '!';
         }
     }
+    }
 }
-// const url_list = 'https://go-wash-api.onrender.com/api/auth/address'
-//  async function listarEndereco(){
-//     //  let access_token = get_local_storage();
-//      let response = await fetch(url_list, {
-//          method: "GET",
-//          headers: {
-//              'Content-Type': 'application/json',
-//              'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vYXBpLWdvLXdhc2gtZWZjOWM5NTgyNjg3Lmhlcm9rdWFwcC5jb20vYXBpL2xvZ2luIiwiaWF0IjoxNzExNDc0MTY2LCJuYmYiOjE3MTE0NzQxNjYsImp0aSI6ImFYenpvRG4zM2N4UkxJdFoiLCJzdWIiOiIzMTYiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.ZctQ0ocTrfihBa5AasDwg2FCluq8JLSGgxbFLgplaN0',
-//              'Cookie' : 'gowash_session=0hGqRHf0q38ETNgEcJGce30LcPtuPKo48uKtb7Oj'
-//          }        
-//      });
-//      let datalist = await response.json()
-//      console.log(datalist);
-//      for (i of datalist.data) {
-//         let title = i.title;
-//         let cep = i.cep;
-//         let address = i.address;
-//         let number = i.number;
-//         let complement = i.complement;
-//         console.log(title, cep, address, number, complement);
-//         console.log("#####################################")
-//      }
-// }
-// listarEndereco()
-// const url_delete = 'https://go-wash-api.onrender.com/api/auth/address'
-// async function deletarEndereco(){
-//     // let access_token = get_local_storage();
-//     let response = await fetch(url_delete, {
-//         method: "DELETE",
-//         headers: {
-//             'Content-Type': 'application/json',
-//             'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vYXBpLWdvLXdhc2gtZWZjOWM5NTgyNjg3Lmhlcm9rdWFwcC5jb20vYXBpL2xvZ2luIiwiaWF0IjoxNzExMzE3ODQ4LCJuYmYiOjE3MTEzMTc4NDgsImp0aSI6IlFZd3Zhc0h6UzNQUmxGUDgiLCJzdWIiOiIzMTYiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.QpdWDucTaoY7uUTNHYw266vFypj8yQM3c4GdnYy2cUU',
-//             'Cookie' : 'gowash_session=0hGqRHf0q38ETNgEcJGce30LcPtuPKo48uKtb7Oj'
-//         }        
-//     });
-//     let datadelete = await response.json()
-//     console.log(JSON.stringify(datadelete))
-// }
-
-// deletarEndereco()
