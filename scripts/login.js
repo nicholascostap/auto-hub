@@ -38,7 +38,7 @@ async function loginUsuario(){
         }
     
         window.localStorage.setItem("userData", JSON.stringify(values));
-        window.location.href = '/view/endereco.html'
+        window.location.href = '../view/endereco.html'
         
     }
     else {

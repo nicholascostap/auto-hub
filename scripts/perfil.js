@@ -33,18 +33,14 @@ const url_list = 'https://go-wash-api.onrender.com/api/auth/address'
      });
      let datalist = await response.json()
     //  console.log(datalist);
-    const sectionListAddress = document.querySelector('.section_list_address');
-    while (sectionListAddress.firstChild) {
-        sectionListAddress.removeChild(sectionListAddress.firstChild);
-    }
      for (i of datalist.data) {
         let title = i.title;
         let cep = i.cep;
         let address = i.address;
         let number = i.number;
         let complement = i.complement;
-        console.log(title, cep, address, number, complement);
-        console.log("#####################################")
+        // console.log(title, cep, address, number, complement);
+        // console.log("#####################################")
 
         // CRIANDO DIV
         let enderecoDiv = document.createElement('div');

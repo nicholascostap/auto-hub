@@ -35,7 +35,9 @@ async function cadastroEndereco(){
         document.getElementById("status_number").innerText = '';
         console.log(data);
         document.getElementById("status_cadastro").innerText = 'Cadastro de Endereço Realizado com Sucesso!';
-        window.location.href = '/view/perfil.html'
+        setTimeout(function() {
+            window.location.href = '../view/perfil.html';
+        }, 5000);
     }
     else {
         for(i in errors){
