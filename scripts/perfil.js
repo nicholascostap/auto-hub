@@ -32,8 +32,9 @@ const url_list = 'https://go-wash-api.onrender.com/api/auth/address'
          }        
      });
      let datalist = await response.json()
-    //  console.log(datalist);
+     console.log(datalist);
      for (i of datalist.data) {
+        let id = i.id
         let title = i.title;
         let cep = i.cep;
         let address = i.address;
@@ -60,16 +61,54 @@ const url_list = 'https://go-wash-api.onrender.com/api/auth/address'
         let complementPara = document.createElement('p');
         complementPara.textContent = 'Complemento: ' + i.complement;
 
+        let deleteend = document.createElement('button');
+        deleteend.value = id;
+        deleteend.textContent = 'Deletar';
+        deleteend.addEventListener('click', () => {
+            deletarendereco(deleteend.value);
+        });
+
     // Adiciona os elementos de texto à div de endereço
         enderecoDiv.appendChild(titlePara);
         enderecoDiv.appendChild(cepPara);
         enderecoDiv.appendChild(addressPara);
         enderecoDiv.appendChild(numberPara);
         enderecoDiv.appendChild(complementPara);
+        enderecoDiv.appendChild(deleteend)
 
         // Adiciona a div de endereço à section_list_address
         document.querySelector('.section_list_address').appendChild(enderecoDiv);
      }
 }
+
+const urldelete = 'https://go-wash-api.onrender.com/api/auth/address/';
+
+async function deletarendereco(id){
+    let newurl = urldelete + id
+    let access_token = window.localStorage.getItem('access_token');
+    console.log(newurl)
+    let response = await fetch(newurl, {
+        method: "DELETE",
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization': 'Bearer ' + access_token,
+            'Cookie' : 'gowash_session=0hGqRHf0q38ETNgEcJGce30LcPtuPKo48uKtb7Oj'
+        }
+});
+    let data = await response.json()
+    console.log(data)
+    validacao = data.data
+    console.log(typeof(validacao))
+    if (validacao == true){
+    alert('Endereço deletado com sucesso!');
+    location.reload();
+}
+    else {
+    alert('Erro na deleção do Endereço')
+    location.reload();
+    }
+
+}
+
 
 listarEndereco();

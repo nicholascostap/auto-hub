@@ -24,7 +24,7 @@ async function cadastroEndereco(){
             'Content-Type': 'application/json',
             'Authorization': 'Bearer ' + access_token,
             'Cookie' : 'gowash_session=0hGqRHf0q38ETNgEcJGce30LcPtuPKo48uKtb7Oj'
-        }        
+        }
     });
     let data = await response.json()
     let errors = data.data.errors
